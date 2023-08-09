@@ -36,8 +36,14 @@ function errorContraseña() {
 function verificacion(){
      if(Campos_no_vacios() && errorContraseña()){ 
         showAlertSuccess();
+        setTimeout(() => {
+            location.reload()
+        }, 1500);
     }else {
         showAlertError();
+        setTimeout(() => {
+            location.reload()
+        }, 1500);
     } 
 }
 
