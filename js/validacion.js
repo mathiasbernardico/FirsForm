@@ -1,12 +1,14 @@
 function showAlertSuccess() {
-    document.getElementById("alert-success").classList.add("show");
+    document.getElementById("alert-success").classList.toggle("show");
+
 }
 
 function showAlertError() {
-    document.getElementById("alert-danger").classList.add("show");
+    document.getElementById("alert-danger").classList.toggle("show");
 }
 
 function Campos_no_vacios(){
+
     nombre = document.getElementById("nombre").value;
     apellido  = document.getElementById("apellido").value;
     email = document.getElementById("email").value;
@@ -41,4 +43,5 @@ function verificacion(){
 
 
 document.getElementById("regBtn").addEventListener("click", verificacion);
+
 
